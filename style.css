@@ -1,0 +1,229 @@
+/*****************************************************      
+                 NAV BAR START
+*****************************************************/
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.navbar-menu {
+  background-color: #005ec8;
+  width: calc(100%);
+  height: 55px;
+}
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 0 50px;
+}
+
+.navbar-menu a:hover {
+  background-color: #fff;
+  color: #005ec8;
+}
+
+.nav-menu-options li a {
+  display: block;
+  padding: 18px;
+}
+
+.nav-homepage {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px !important;
+  letter-spacing: 1px;
+  position: absolute;
+  z-index: 1;
+  padding: 17px;
+}
+
+.nav-menu-select {
+  margin: 0;
+  text-align: right;
+  height: inherit;
+}
+.nav-hamburger {
+  display: inline-block;
+  padding: 13px;
+}
+
+.nav-menu-options {
+  display: block;
+  text-align: right;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: inherit;
+  color: #fff;
+  z-index: 1;
+}
+.card img{
+  height:400px;
+  
+  
+}
+.card-header2{
+  background-color: #F11A7B;
+  color: #fff;
+}
+.card-body h3{
+  text-align: justify;
+  
+}
+
+.Fixtures {
+  background-color: rgb(0, 255, 76);
+  background-size: cover; /* or 'contain' depending on your preference */
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px; /* Add padding to the section if needed */
+  color: #fff; /* Set text color to make it readable on the background */
+  text-align: center;
+  min-height: 50vh;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 750px) {
+  .nav-menu-select {
+    display: none;
+  }
+  .nav-menu-options {
+    display: block !important;
+    border-bottom: 0;
+  }
+  .nav-menu-options li {
+    display: inline-block;
+  }
+}
+/* MOBILE */
+@media screen and (max-width: 750px) {
+  .navbar-menu {
+    margin: 0;
+  }
+  .nav-menu-options {
+    display: none;
+    position: relative;
+    text-align: center;
+  }
+  .nav-menu-options li {
+    display: block;
+  }
+}
+.hamburger {
+  width: 25px;
+  height: 2px;
+  background-color: currentColor;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.nav-hamburger:before {
+  content: "";
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 2px solid transparent;
+  top: 8px;
+  right: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+.nav-hamburger.change:before {
+  border: 2px solid currentColor;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 7px);
+  transform: rotate(-45deg) translate(-4px, 7px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -7px);
+  transform: rotate(45deg) translate(-4px, -7px);
+}
+/*****************************************************      
+                   NAV BAR END
+  *****************************************************/
+body {
+  margin: 0;
+}
+
+.ticket-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+footer {
+  padding: 1.875rem 1.875rem;
+  border-top: 1px solid #ddd;
+
+  text-align: center;
+}
+
+.paymentWrapper {
+  min-width: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.payment-box {
+  width: 300px;
+  height: 400px;
+  background-color: #6527be;
+  border-top-right-radius: 3%;
+  border-bottom-right-radius: 3%;
+
+  color: #f5f5f5;
+}
+
+.payment-box input {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.selected-game {
+  width: 300px;
+  height: 400px;
+  background-color: #22a699;
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  color: #f5f5f5;
+}
+
+.game {
+  margin-top: 50px;
+}
+select {
+  height: 2rem;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.content {
+  flex: 1; /* Take up remaining vertical space */
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

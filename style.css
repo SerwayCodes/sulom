@@ -103,6 +103,15 @@
     display: inline-block;
   }
 }
+
+@media screen and (max-width: 540px){
+  .card img{
+    height:300px;
+    
+    
+  }
+}
+
 /* MOBILE */
 @media screen and (max-width: 750px) {
   .navbar-menu {
